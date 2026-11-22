@@ -8,13 +8,13 @@
 <link rel="icon" href="logo.jpg">
 <style>
   :root {
-    --page: #353b24;
-    --card: #353b24;
-    --cream: #fff8e8;
-    --cream-2: #efeadc;
-    --ink: #2a2a1c;
-    --maroon: #7a2630;
-    --tagline: #f5f0e6;
+    --page: #ff0019;
+    --card: transparent;
+    --cream: #fff7f4;
+    --cream-2: #fff7f4;
+    --ink: #3d1a1f;
+    --maroon: #d9001a;
+    --tagline: #ffffff;
   }
   * { box-sizing: border-box; margin: 0; }
   body {
@@ -28,12 +28,12 @@
     width: 100%; max-width: 460px;
     background: var(--card);
     border-radius: 56px;
-    padding: 56px 36px 52px;
+    padding: 20px 8px 40px;
     display: flex; flex-direction: column; align-items: center;
   }
   .logo {
-    width: 200px; height: 200px; border-radius: 50%;
-    object-fit: cover; display: block;
+    width: 100%; max-width: 460px; height: auto; display: block;
+    mix-blend-mode: lighten; margin: -40px 0 -50px;
   }
   .tagline {
     margin: 40px 0 44px;
@@ -57,13 +57,13 @@
   .socials { display: flex; gap: 22px; margin-top: 48px; }
   .socials a {
     width: 58px; height: 58px; border-radius: 50%;
-    border: 1.5px solid rgba(245,240,230,.45);
+    border: 1.5px solid rgba(255,255,255,.55);
     display: grid; place-items: center; transition: background .15s;
   }
   .socials a:hover { background: rgba(255,255,255,.1); }
   .socials svg { width: 28px; height: 28px; stroke: var(--tagline); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
   @media (max-width: 420px) {
-    .card { border-radius: 40px; padding: 44px 22px 40px; }
+    .card { padding: 12px 0 32px; }
     .btn { height: 64px; font-size: 1.15rem; padding: 0 22px; }
   }
 </style>
